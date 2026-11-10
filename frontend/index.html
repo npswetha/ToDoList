@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="content">
+                <div class="logo">
+                    <svg></svg>
+                    <span>Brooklyn</span>    
+                </div>
+                <div class="nav-link">
+                    <ul>
+                        <li class="nav-item"><a>Home</a></li>
+                        <li class="nav-item"><a>About</a></li>
+                        <li class="nav-item"><a>Process</a></li>
+                        <li class="nav-item"><a>portfolio</a></li>
+                        <li class="nav-item"><a>Blog</a></li>
+                        <li class="nav-item"><a>Services</a></li>
+                    </ul>
+                </div>
+                <button>Contact</button>
+                <button class="menu">☰</button>
+            </div>
+        </div>
+        
+    </header>
+    <img src="image/portfolio.svg" alt="portfolio image">
+    <script>
+    const link= document.querySelector(".nav-link");
+    const menu=document.querySelector(".menu")
+     menu.addEventListener("click", () => {
+    link.classList.toggle("open");
+  });
+  </script>
+</body>
+</html>
